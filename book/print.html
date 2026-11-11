@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Communicate Like a Leader — Joseph Tsar&#x27;s Full Training</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Curated wiki distilling Joseph Tsar&#x27;s &#x27;How To Communicate Like A Leader [Full Training]&#x27;: the Articulate Ascent, intention, focus, body and breath, and the laws of source and release.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="about.html"><strong aria-hidden="true">2.</strong> About this wiki</a></li><li class="chapter-item expanded affix "><li class="part-title">Concepts</li><li class="chapter-item expanded "><a href="concepts/articulate-ascent.html"><strong aria-hidden="true">3.</strong> The Articulate Ascent</a></li><li class="chapter-item expanded "><a href="concepts/speech-is-a-sport.html"><strong aria-hidden="true">4.</strong> Speech Is a Sport</a></li><li class="chapter-item expanded "><a href="concepts/three-high-quality-problems.html"><strong aria-hidden="true">5.</strong> The Three High-Quality Problems</a></li><li class="chapter-item expanded "><a href="concepts/intention.html"><strong aria-hidden="true">6.</strong> Problem 1: Intention</a></li><li class="chapter-item expanded "><a href="concepts/focus.html"><strong aria-hidden="true">7.</strong> Problem 2: Focus</a></li><li class="chapter-item expanded "><a href="concepts/body-and-breath.html"><strong aria-hidden="true">8.</strong> Problem 3: Body & Breath</a></li><li class="chapter-item expanded "><a href="concepts/two-spiritual-laws.html"><strong aria-hidden="true">9.</strong> The Two Spiritual Laws</a></li><li class="chapter-item expanded affix "><li class="part-title">Practice</li><li class="chapter-item expanded "><a href="concepts/practice.html"><strong aria-hidden="true">10.</strong> Pre-Speaking Routine</a></li><li class="chapter-item expanded "><a href="concepts/quotes.html"><strong aria-hidden="true">11.</strong> Key Quotes</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Communicate Like a Leader — Joseph Tsar&#x27;s Full Training</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="communicate-like-a-leader"><a class="header" href="#communicate-like-a-leader">Communicate Like a Leader</a></h1>
+<p><strong>The one-line thesis of the training:</strong> most people polish the surface of their speech (filler words, frameworks, word choice), but the &quot;low-quality&quot; problems they feel are symptoms of three deeper, <strong>high-quality</strong> problems: <strong>intention, focus, and body &amp; breath</strong>. Train those like an athlete and most of the surface problems fade.</p>
+<p>Distilled from Joseph Tsar's <em>How To Communicate Like A Leader [Full Training]</em> (about 25 minutes, posted on X on 2026-11-11).</p>
+<h2 id="core-concepts"><a class="header" href="#core-concepts">Core concepts</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Concept</th><th>In one line</th><th>Around</th></tr></thead><tbody>
+<tr><td><a href="concepts/articulate-ascent.html">The Articulate Ascent</a></td><td>Communication problems come in low- and high-quality grades</td><td>01:40</td></tr>
+<tr><td><a href="concepts/speech-is-a-sport.html">Speech Is a Sport</a></td><td>Coaching plus repetitions; symptoms are dashboard lights</td><td>05:00</td></tr>
+<tr><td><a href="concepts/three-high-quality-problems.html">The Three High-Quality Problems</a></td><td>Heart, mind, nervous system</td><td>04:00</td></tr>
+<tr><td><a href="concepts/intention.html">Problem 1: Intention</a></td><td>The flavor behind the words; one word, 30 seconds before</td><td>06:20</td></tr>
+<tr><td><a href="concepts/focus.html">Problem 2: Focus</a></td><td>Internal over external influence; comfort with silence</td><td>09:40</td></tr>
+<tr><td><a href="concepts/body-and-breath.html">Problem 3: Body &amp; Breath</a></td><td>Shoulders, posture, &quot;authority is oxygen&quot;, lion's breathing</td><td>17:20</td></tr>
+<tr><td><a href="concepts/two-spiritual-laws.html">The Two Spiritual Laws</a></td><td>Be the source; a steady hand and an open palm</td><td>23:00</td></tr>
+</tbody></table>
+</div>
+<h2 id="use-it"><a class="header" href="#use-it">Use it</a></h2>
+<ul>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a>: the drills from the video as a short checklist.</li>
+<li><a href="concepts/quotes.html">Key Quotes</a>: 15 short lines with timestamps.</li>
+</ul>
+<p><strong>Original video:</strong> <a href="https://x.com/joseph_tsar_/status/2120562177765446076">X post by @joseph_tsar_</a></p>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="about-this-wiki"><a class="header" href="#about-this-wiki">About this wiki</a></h1>
+<p>This wiki distills one video: <strong>Joseph Tsar</strong> (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), <em><strong>How To Communicate Like A Leader [Full Training]</strong></em>, posted on X on <strong>2026-11-11</strong> (<a href="https://x.com/joseph_tsar_/status/2120562177765446076">original post</a>). Running time is about 25.5 minutes. Tsar runs the <strong>Elite Speak</strong> communication coaching program and says he has coached over 100 executives and entrepreneurs.</p>
+<h2 id="what-is-here-and-what-is-not"><a class="header" href="#what-is-here-and-what-is-not">What is here and what is not</a></h2>
+<ul>
+<li><strong>Here:</strong> plain-language summaries of each idea, how to apply it, and short quotes (each under about 30 words) with approximate <code>[mm:ss]</code> times.</li>
+<li><strong>Not here:</strong> the full transcript. This is Joseph Tsar's content; watch the original for the complete training, visuals (the Articulate Ascent chart, the symptom list, the emotion wheel) and his delivery.</li>
+<li><strong>Left out on purpose:</strong> the promo segments (a free diagnosis-call pitch for his 90-day Elite Speak program with a short client testimonial around 16:40, and an email opt-in for his own pre-speaking routine at the end). The <a href="concepts/practice.html">Pre-Speaking Routine</a> page here is assembled only from what he says in the video, not from that download.</li>
+</ul>
+<h2 id="how-it-was-made"><a class="header" href="#how-it-was-made">How it was made</a></h2>
+<ul>
+<li>Transcribed locally with Whisper (large-v3-turbo). The first pass had broken timestamps (a repeated passage and a jump from 05:29 to 09:28), so the audio was re-transcribed in fixed 20-second windows. <strong>Quote times are accurate to roughly ±10 seconds.</strong></li>
+<li>A few visual-only or unexplained items are flagged on the relevant pages as &quot;not covered in the video&quot;.</li>
+</ul>
+<h2 id="speaker"><a class="header" href="#speaker">Speaker</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Who</th><th>Role</th><th>Core contribution</th></tr></thead><tbody>
+<tr><td>Joseph Tsar</td><td>Communication coach, Elite Speak</td><td>Articulate Ascent; three high-quality problems (intention, focus, body &amp; breath); focus anchor drill; &quot;authority is oxygen&quot;; laws of source and release</td></tr>
+</tbody></table>
+</div>
+<p><strong>Original video:</strong> <a href="https://x.com/joseph_tsar_/status/2120562177765446076">How To Communicate Like A Leader [Full Training] on X</a></p>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-articulate-ascent"><a class="header" href="#the-articulate-ascent">The Articulate Ascent</a></h1>
+<p><em>Source: Joseph Tsar, roughly 01:40–04:40</em></p>
+<h2 id="the-idea"><a class="header" href="#the-idea">The idea</a></h2>
+<p>Tsar borrows the saying that money doesn't remove your problems, it just gives you <strong>higher-quality problems</strong>. Communication works the same way. As you grow, the problems you face change in kind, not just in number.</p>
+<p>The <strong>Articulate Ascent</strong> is his name for a chart of how a person usually grows as a speaker over a lifetime:</p>
+<ul>
+<li><strong>Early on:</strong> you try to impress people, and there is a lot of ego behind your words.</li>
+<li><strong>Later in life:</strong> much of that ego falls away, and you start to value simple speaking and storytelling, the way older people do.</li>
+</ul>
+<p>His point is that you will drift up this curve anyway with age. The training is meant to get you there sooner by working on the right things now.</p>
+<h2 id="low-quality-problems-the-symptoms"><a class="header" href="#low-quality-problems-the-symptoms">Low-quality problems: the symptoms</a></h2>
+<p>He says there are about 20 &quot;low-quality&quot; communication problems. These are the complaints he hears when people tell him their communication feels &quot;off&quot;. The ones he reads out:</p>
+<ul>
+<li>I take too long to get to the point.</li>
+<li>I lose my train of thought.</li>
+<li>I use filler words.</li>
+<li>I struggle to explain complex ideas simply.</li>
+<li>I sound scattered when I speak.</li>
+<li>I don't feel like myself.</li>
+<li>I over-explain.</li>
+<li>I can't turn raw thoughts into polished words.</li>
+</ul>
+<p>The full list is on screen in the video. Later he adds <strong>rambling, lack of clarity, poor word choice and poor information retrieval</strong> (about 18:20), and links them to an unregulated body.</p>
+<p>Most people recognise themselves in <strong>five to ten</strong> of these. Which ones depends a lot on personality.</p>
+<h2 id="high-quality-problems-the-causes"><a class="header" href="#high-quality-problems-the-causes">High-quality problems: the causes</a></h2>
+<p>Behind all of these symptoms are <a href="concepts/three-high-quality-problems.html">three high-quality problems</a>: <strong>intention, focus, and body &amp; breath</strong>. Tsar says that if you spend about two weeks over the next month working on those three, most of the low-quality problems go away.</p>
+<h2 id="how-to-apply-it"><a class="header" href="#how-to-apply-it">How to apply it</a></h2>
+<ol>
+<li>Go through the symptom list and mark the 5–10 that sound like you.</li>
+<li>Don't treat each one as a separate fix. Filler words or rambling are signals, not the disease.</li>
+<li>Map your symptoms back to the three causes (see <a href="concepts/speech-is-a-sport.html">Speech Is a Sport</a> for the dashboard-light analogy) and train those.</li>
+</ol>
+<h2 id="quotes"><a class="header" href="#quotes">Quotes</a></h2>
+<blockquote>
+<p>&quot;If you have enough money you still have problems, you just have higher quality problems. Well, the same is true with communication.&quot; — [01:48]</p>
+</blockquote>
+<blockquote>
+<p>&quot;They might remove filler words, but they never focus on the high quality communication problems that actually change the way that you show up.&quot; — [00:35]</p>
+</blockquote>
+<h2 id="related"><a class="header" href="#related">Related</a></h2>
+<ul>
+<li><a href="concepts/speech-is-a-sport.html">Speech Is a Sport</a></li>
+<li><a href="concepts/three-high-quality-problems.html">The Three High-Quality Problems</a></li>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="speech-is-a-sport"><a class="header" href="#speech-is-a-sport">Speech Is a Sport</a></h1>
+<p><em>Source: Joseph Tsar, roughly 05:00–06:20</em></p>
+<h2 id="the-idea-1"><a class="header" href="#the-idea-1">The idea</a></h2>
+<p>Tsar's company has a saying: <strong>speech is a sport</strong>. Treat communication as a kind of athleticism, not as a talent you have or lack.</p>
+<ul>
+<li>If you are bad at football, either you haven't had the right coach or you haven't done enough repetitions.</li>
+<li>The same goes for speaking: <strong>either the wrong coaching, or not enough practice of the right things.</strong></li>
+</ul>
+<p>Every sport has two layers:</p>
+<ul>
+<li><strong>Techniques and mechanics</strong>: the visible moves.</li>
+<li><strong>Foundations</strong>: the strength that makes the moves work. Being good at kicking with your toes doesn't matter if your legs have no muscle.</li>
+</ul>
+<p>The <a href="concepts/three-high-quality-problems.html">high-quality problems</a> are the <strong>leg muscles</strong> of communication. They affect everything else you do.</p>
+<h2 id="the-dashboard-light-analogy"><a class="header" href="#the-dashboard-light-analogy">The dashboard-light analogy</a></h2>
+<p>Low-quality problems (filler words, rambling, losing your thread) are <strong>indicator lights blinking on your car's dashboard</strong>. They tell you something is wrong under the hood.</p>
+<ul>
+<li>The usual fix is to put <strong>duct tape over the light</strong>: hide the symptom, for example by drilling yourself out of filler words.</li>
+<li>The real fix is to <strong>refuel the car or check the engine</strong>. When the cause is dealt with, the light goes out by itself.</li>
+</ul>
+<h2 id="how-to-apply-it-1"><a class="header" href="#how-to-apply-it-1">How to apply it</a></h2>
+<ul>
+<li>Plan reps, not just insights. Pick a drill (see <a href="concepts/practice.html">Practice</a>) and repeat it on a schedule, like training sessions.</li>
+<li>When a symptom shows up, ask &quot;which light is this, and what's under the hood?&quot; instead of &quot;how do I hide it?&quot;</li>
+<li>Get feedback from someone who can see your mechanics. In his framing, that is the &quot;coach&quot; half.</li>
+</ul>
+<h2 id="quotes-1"><a class="header" href="#quotes-1">Quotes</a></h2>
+<blockquote>
+<p>&quot;We have this saying in our company that speech is a sport.&quot; — [05:08]</p>
+</blockquote>
+<blockquote>
+<p>&quot;Low quality communication challenges are like the indicator lights on your communications car dashboard that are blinking.&quot; — [05:58]</p>
+</blockquote>
+<h2 id="related-1"><a class="header" href="#related-1">Related</a></h2>
+<ul>
+<li><a href="concepts/articulate-ascent.html">The Articulate Ascent</a></li>
+<li><a href="concepts/three-high-quality-problems.html">The Three High-Quality Problems</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-three-high-quality-problems"><a class="header" href="#the-three-high-quality-problems">The Three High-Quality Problems</a></h1>
+<p><em>Source: Joseph Tsar, roughly 03:50–04:50 (overview), developed through 06:20–22:50</em></p>
+<h2 id="the-idea-2"><a class="header" href="#the-idea-2">The idea</a></h2>
+<p>When Tsar is on a call or running a workshop, he listens for three underlying problems. Each one has a plain-language version that people say about themselves:</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>High-quality problem</th><th>What it sounds like from the inside</th><th>Page</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>Setting your intention</strong></td><td>&quot;I don't know how to speak from my heart.&quot;</td><td><a href="concepts/intention.html">Intention</a></td></tr>
+<tr><td>2</td><td><strong>Holding / managing focus</strong></td><td>&quot;I don't know how to manage my mind while I speak.&quot;</td><td><a href="concepts/focus.html">Focus</a></td></tr>
+<tr><td>3</td><td><strong>Body and breath control</strong></td><td>&quot;I don't know how to control my nervous system.&quot;</td><td><a href="concepts/body-and-breath.html">Body &amp; Breath</a></td></tr>
+</tbody></table>
+</div>
+<p>Put simply: <strong>heart, mind, body.</strong> Tsar says that if you give these about two weeks of focused work over the next month, most of the <a href="concepts/articulate-ascent.html">low-quality symptoms</a> go away.</p>
+<p>He expects pushback (&quot;I thought this was about choosing the right words&quot;) and answers that there are &quot;layers to the game&quot;. Word choice sits on top of these three.</p>
+<h2 id="how-to-apply-it-2"><a class="header" href="#how-to-apply-it-2">How to apply it</a></h2>
+<ul>
+<li>Use the table as a diagnostic. When a talk goes badly, ask which layer failed: was the intention unclear, did your focus break, or was your body tense?</li>
+<li>Train one layer at a time with its drill: the one-word intention, the focus anchor, and posture plus lion's breathing.</li>
+</ul>
+<h2 id="quote"><a class="header" href="#quote">Quote</a></h2>
+<blockquote>
+<p>&quot;Number one, setting your intention, which translates to, I don't know how to speak from my heart.&quot; — [04:12]</p>
+</blockquote>
+<h2 id="related-2"><a class="header" href="#related-2">Related</a></h2>
+<ul>
+<li><a href="concepts/intention.html">Problem 1: Intention</a> · <a href="concepts/focus.html">Problem 2: Focus</a> · <a href="concepts/body-and-breath.html">Problem 3: Body &amp; Breath</a></li>
+<li><a href="concepts/speech-is-a-sport.html">Speech Is a Sport</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="problem-1-intention"><a class="header" href="#problem-1-intention">Problem 1: Intention</a></h1>
+<p><em>Source: Joseph Tsar, roughly 06:20–09:40</em></p>
+<h2 id="the-idea-3"><a class="header" href="#the-idea-3">The idea</a></h2>
+<p>Everything we say carries some intention. Tsar calls it <strong>&quot;the flavor behind the words.&quot;</strong> When the intention and the words don't match, listeners sense that something is off, even if the words on paper are fine.</p>
+<p><strong>His demonstration:</strong> someone asks &quot;are you listening?&quot; and he answers &quot;yeah, of course, I'm listening&quot; in a dismissive tone. Written down, the words say yes. The tone says no. That mismatch shows the real intention: <em>&quot;my heart is saying something different than what my mouth is saying.&quot;</em> (He adds an aside that women are better than men at sensing this.)</p>
+<p>Intention shapes everything downstream:</p>
+<ul>
+<li>An intention to <strong>harm</strong> brings more aggressive, hurtful word choices.</li>
+<li>An intention to <strong>inspire</strong> brings more emotion in the voice, more emphasis on key words, and more uplifting language.</li>
+</ul>
+<p>So setting the intention <em>before</em> you open your mouth is a high-leverage move. It changes the flavor of the whole message.</p>
+<h2 id="how-to-apply-it-the-one-word-intention"><a class="header" href="#how-to-apply-it-the-one-word-intention">How to apply it: the one-word intention</a></h2>
+<ol>
+<li><strong>Take 30 seconds before you speak.</strong></li>
+<li><strong>Pick one word</strong> that will be the place you speak from, for example <em>inspire</em>, <em>love</em> or <em>encourage</em>.</li>
+<li>Speak from that word. He says choosing <em>encourage</em> changes how he shows up: his voice changes and his word choice becomes tighter and more congruent with the word.</li>
+</ol>
+<h2 id="widen-the-range-the-emotion-wheel"><a class="header" href="#widen-the-range-the-emotion-wheel">Widen the range: the emotion wheel</a></h2>
+<p>To get better at naming your intention (and at reading other people's), Tsar recommends <strong>expanding your emotional vocabulary</strong> with an <strong>emotion wheel</strong>:</p>
+<ul>
+<li>A wheel built around a small set of core emotions (he says five), which get more specific toward the outer rim.</li>
+<li>He says it is not his invention. He studies it and links one under the video.</li>
+<li>Why it helps: more words give you <strong>more places you can speak from</strong>.</li>
+</ul>
+<p><em>Not covered in the video:</em> which wheel he uses. The chart is only shown on screen.</p>
+<h2 id="quotes-2"><a class="header" href="#quotes-2">Quotes</a></h2>
+<blockquote>
+<p>&quot;…behind everything that we say is some kind of intention. It's like what I call the flavor behind the words.&quot; — [06:30]</p>
+</blockquote>
+<blockquote>
+<p>&quot;You take 30 seconds before you communicate and you think of one word that is going to be the place, the intention that you speak from.&quot; — [08:12]</p>
+</blockquote>
+<h2 id="related-3"><a class="header" href="#related-3">Related</a></h2>
+<ul>
+<li><a href="concepts/focus.html">Problem 2: Focus</a></li>
+<li><a href="concepts/two-spiritual-laws.html">The Two Spiritual Laws</a>: the Law of Source is intention at its deepest level, speaking to give.</li>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="problem-2-focus"><a class="header" href="#problem-2-focus">Problem 2: Focus</a></h1>
+<p><em>Source: Joseph Tsar, roughly 09:40–16:40</em></p>
+<h2 id="the-idea-4"><a class="header" href="#the-idea-4">The idea</a></h2>
+<p>Focus is a superpower everyone has, but most people can't reach it under the &quot;choppy waters&quot; of technology and modern life. When Tsar was preparing for a world-championship speech competition, he emailed champion speakers and got coaching from a few. What linked their different styles was that <strong>each had an intimate relationship with focus</strong>. They could &quot;dance with it&quot; and use it on purpose.</p>
+<p>His comparison is curling your toes one at a time. Most people can't, but with enough time and intention you can activate muscles you didn't know you had. Focus works the same way: there are levels to it, and training it can &quot;10x&quot; clarity and precision.</p>
+<h3 id="internal-vs-external-influence"><a class="header" href="#internal-vs-external-influence">Internal vs external influence</a></h3>
+<p>Most speakers are easily swayed by their surroundings, especially by listeners' faces.</p>
+<ul>
+<li><strong>External influence</strong> comes through the senses: what you see and hear. Someone frowns or raises an eyebrow, you read it as disapproval, and you bend your message to fit.</li>
+<li><strong>Internal influence</strong> comes from within: how you feel about the content, and staying true to it no matter what.</li>
+</ul>
+<p>The core skill is <strong>noticing the thought</strong> that an external cue plants (&quot;that person disapproves&quot;) and <strong>choosing not to engage it</strong>, not turning it over or letting it run away with you. In short, better control of your thoughts.</p>
+<h3 id="focus-breaks-every-23-seconds"><a class="header" href="#focus-breaks-every-23-seconds">Focus breaks every 2–3 seconds</a></h3>
+<p>Most people don't realise their focus breaks <strong>every two to three seconds</strong>. A new thought arrives, and they change the message to make room for it. That constant switching and self-monitoring is why ordinary professional speech sounds unclear and messy. A speaker who holds focus through the whole message has &quot;tremendous presence&quot;.</p>
+<p>Focus never goes away. It is buried under mental noise: <em>&quot;Stillness is always with you.&quot;</em></p>
+<h3 id="the-signal-comfort-with-silence"><a class="header" href="#the-signal-comfort-with-silence">The signal: comfort with silence</a></h3>
+<p>Tsar can tell how far someone has trained focus by one signal: <strong>how comfortable they are with silence</strong>. A person who can pause for long stretches mid-speech and sit in &quot;that nothingness&quot; has usually done the work.</p>
+<h2 id="how-to-apply-it-3"><a class="header" href="#how-to-apply-it-3">How to apply it</a></h2>
+<p><strong>1. Blindfold drill (external focus).</strong> Talk with someone while blindfolded and wearing earplugs or earmuffs. Notice how much easier it is to think, not doubt yourself, and stay on topic when the external input is gone.</p>
+<p><strong>2. &quot;Something you'd die for&quot; (internal focus).</strong> Talk about something you deeply believe in. Notice that you stop caring about the room. That is what internal focus feels like.</p>
+<p><strong>3. The Focus Anchor (test and train).</strong></p>
+<ul>
+<li>Close your eyes and hold in mind an object <strong>behind you</strong> (his example is the rolls of colored paper behind him). Define it and keep it in mind. That is your anchor.</li>
+<li>While holding it, <strong>answer a question</strong>. The answer can be boring; it doesn't have to be smart.</li>
+<li>Do it while people show you <strong>angry or disapproving faces</strong> (in his workshop version, on video, booing).</li>
+<li>You are juggling three opponents: the anchor, the content of your answer, and the hostile reactions. Don't let your attention leave the anchor for long.</li>
+<li>He says people usually laugh at some point when they realise they can stay steady and aren't controlled by what is in front of them.</li>
+</ul>
+<p><strong>4. Practise pausing.</strong> Deliberately leave silences while you speak and get comfortable in them. That is the outward sign of trained focus.</p>
+<p><em>Not covered in the video:</em> the list of focus-anchor questions he says is &quot;below this video&quot;.</p>
+<h2 id="quotes-3"><a class="header" href="#quotes-3">Quotes</a></h2>
+<blockquote>
+<p>&quot;Most people don't realize that their focus is usually breaking every two to three seconds because a new thought enters their mind.&quot; — [15:45]</p>
+</blockquote>
+<blockquote>
+<p>&quot;Focus always exists. It's just buried under intense mental activity. Stillness is always with you.&quot; — [16:10]</p>
+</blockquote>
+<h2 id="related-4"><a class="header" href="#related-4">Related</a></h2>
+<ul>
+<li><a href="concepts/intention.html">Problem 1: Intention</a></li>
+<li><a href="concepts/body-and-breath.html">Problem 3: Body &amp; Breath</a>: a calm body makes focus easier.</li>
+<li><a href="concepts/two-spiritual-laws.html">The Two Spiritual Laws</a>: needing the room's approval is the external pull at its root.</li>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="problem-3-body--breath"><a class="header" href="#problem-3-body--breath">Problem 3: Body &amp; Breath</a></h1>
+<p><em>Source: Joseph Tsar, roughly 17:20–22:55</em></p>
+<h2 id="the-idea-5"><a class="header" href="#the-idea-5">The idea</a></h2>
+<p>High performers (executives, CEOs, founders, salespeople) often have a <strong>dysregulated nervous system</strong>. Constant task-switching and stressful decisions build tension and control into their habits. Those habits helped them succeed, but they don't produce clear, powerful speech.</p>
+<p>A tense body and a full mind put the nervous system on high alert. The speech that comes out is <strong>harsh, scattered, not calm</strong>, and that is where the low-quality symptoms come from: rambling, lack of clarity, poor word choice, trouble recalling information. When people say &quot;I can't get to the point&quot;, Tsar often finds the root cause is simply that they aren't calm.</p>
+<p>His example: an entrepreneur who designs luxury experiences for very wealthy clients, takes a call the moment he gets out of bed, hadn't meditated in a year, and asked to speak like Tony Robbins. Tsar laughed.</p>
+<p>Being calm all the time is unrealistic; that is why monks leave for monasteries. The aim is to <strong>know how to regulate</strong> your nervous system, working on <strong>two parts of the body</strong>. <em>&quot;If you solve the body, you end up improving the mind.&quot;</em></p>
+<h2 id="1-shoulders-and-posture"><a class="header" href="#1-shoulders-and-posture">1. Shoulders and posture</a></h2>
+<ul>
+<li>When Tsar looks for tension, the first and most common place is the <strong>shoulders and upper back</strong>: rounded shoulders, a &quot;chicken neck&quot; (head pushed forward).</li>
+<li>Your favourite on-stage communicators share one thing: <strong>very erect posture</strong>. Tension takes resources and energy away from the mind. Good posture helps your flow of thought and your access to your best information.</li>
+<li>He recommends a <strong>15–20 second routine</strong> to loosen the shoulders and set posture before you speak. <em>He doesn't show the routine in this video.</em></li>
+<li><em>&quot;If you get your posture right, you've created an excellent bedrock.&quot;</em></li>
+</ul>
+<h2 id="2-breath-authority-is-oxygen"><a class="header" href="#2-breath-authority-is-oxygen">2. Breath: &quot;authority is oxygen&quot;</a></h2>
+<ul>
+<li>Good communicators <strong>breathe at the beginning and end of a sentence, not in the middle.</strong></li>
+<li>His law: <strong>&quot;authority is oxygen&quot;</strong>. Where you breathe decides how authoritative you sound.</li>
+<li><strong>Rambling is often a breathing problem.</strong> If you breathe mid-sentence, your lungs refill and you now have air and power to keep going, and continuing feels natural. So the sentence never ends.</li>
+<li>Much of good communication is <strong>retraining your breathing</strong>.</li>
+</ul>
+<h2 id="lions-breathing"><a class="header" href="#lions-breathing">Lion's breathing</a></h2>
+<p>He has tried many breathing exercises, thinks most are fairly helpful, and doesn't rank one above the others. His default is <strong>lion's breathing</strong>:</p>
+<ol>
+<li>Take <strong>two sharp inhales</strong> to fill the lungs.</li>
+<li><strong>Exhale through the mouth</strong> as if breathing out through a straw.</li>
+</ol>
+<p>He describes it as copying the &quot;primal startup sequence&quot; animals go through before a chase (he describes animals scraping the ground two or three times). It builds some adrenaline, steadies the nervous system, and gives you a firm base to push off from.</p>
+<p><strong>The payoff of posture plus breath:</strong> more comfort, a body that feels prepared, better access to your thoughts, and a regulated nervous system. That base removes many low-quality symptoms.</p>
+<h2 id="how-to-apply-it-4"><a class="header" href="#how-to-apply-it-4">How to apply it</a></h2>
+<ul>
+<li>Before speaking: loosen your shoulders, stand tall, then do a round or two of lion's breathing.</li>
+<li>While speaking: <strong>breathe at full stops.</strong> If you notice you are breathing mid-sentence, finish the sentence on the air you have, stop, and breathe.</li>
+<li>If you ramble, check your breathing before you check your words.</li>
+</ul>
+<h2 id="quotes-4"><a class="header" href="#quotes-4">Quotes</a></h2>
+<blockquote>
+<p>&quot;Good communicators do not breathe mid-sentence. There's a law that we talk about in communication where we say authority is oxygen.&quot; — [21:00]</p>
+</blockquote>
+<blockquote>
+<p>&quot;Anyone who deals with rambling is often a mid-sentence breather.&quot; — [21:12]</p>
+</blockquote>
+<h2 id="related-5"><a class="header" href="#related-5">Related</a></h2>
+<ul>
+<li><a href="concepts/focus.html">Problem 2: Focus</a></li>
+<li><a href="concepts/speech-is-a-sport.html">Speech Is a Sport</a></li>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-two-spiritual-laws"><a class="header" href="#the-two-spiritual-laws">The Two Spiritual Laws</a></h1>
+<p><em>Source: Joseph Tsar, roughly 23:00–24:50</em></p>
+<h2 id="the-idea-6"><a class="header" href="#the-idea-6">The idea</a></h2>
+<p>Tsar ends with two &quot;spiritual laws&quot; of communication. He frames them as the <strong>two fundamental battles</strong> good communication comes down to. They sit underneath the mechanics and give them &quot;deeper roots&quot;.</p>
+<h2 id="law-1-the-law-of-source-the-source-principle"><a class="header" href="#law-1-the-law-of-source-the-source-principle">Law 1: The Law of Source (the source principle)</a></h2>
+<p>His wording, condensed: the strongest speech comes from <strong>giving</strong>. If you need the room to approve of you, you lose your footing. If you bring something worth giving (your time, attention and presence), your voice steadies. <strong>Be the source.</strong></p>
+<p><strong>In plain words:</strong> speaking to <em>give</em> to people brings more satisfaction, more fluency, and more power and impact. Speaking to <em>take</em> (approval, a win, validation) weakens it.</p>
+<p><strong>Apply it:</strong> before you speak, ask &quot;what am I bringing them?&quot; and not &quot;what do I need from them?&quot; This fits naturally with the one-word <a href="concepts/intention.html">intention</a>.</p>
+<h2 id="law-2-the-law-of-release"><a class="header" href="#law-2-the-law-of-release">Law 2: The Law of Release</a></h2>
+<p>Every speaker faces a battle between <strong>control and surrender</strong>.</p>
+<ul>
+<li><strong>Control</strong> grips the words before they leave, trying to engineer the perfect idea.</li>
+<li><strong>Surrender</strong> lets the thought come out alive.</li>
+</ul>
+<p>The goal is to <strong>speak with a steady hand and an open palm</strong>: enough structure to be clear, and enough release to be alive.</p>
+<p>As you learn more techniques (including the ones in this video), you will feel the pull between &quot;I want to structure and frame everything and control the outcome&quot; and &quot;what if I just spoke, and that was enough?&quot; He doesn't settle it. He says the balance is yours to find and explore.</p>
+<p><strong>Apply it:</strong> prepare your structure (steady hand), then once you start speaking, stop editing in your head and let the words come (open palm).</p>
+<h2 id="quotes-5"><a class="header" href="#quotes-5">Quotes</a></h2>
+<blockquote>
+<p>&quot;The strongest speech comes from a place of giving. When you need the room to approve you, you lose your ground.&quot; — [23:27]</p>
+</blockquote>
+<blockquote>
+<p>&quot;Control tries to grip the words before they leave. Surrender lets the thought come forth with life.&quot; — [24:03]</p>
+</blockquote>
+<blockquote>
+<p>&quot;So the goal is to speak with a steady hand and an open palm.&quot; — [24:13]</p>
+</blockquote>
+<h2 id="related-6"><a class="header" href="#related-6">Related</a></h2>
+<ul>
+<li><a href="concepts/intention.html">Problem 1: Intention</a></li>
+<li><a href="concepts/focus.html">Problem 2: Focus</a>: approval-seeking is external influence.</li>
+<li><a href="concepts/quotes.html">Key Quotes</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pre-speaking-routine"><a class="header" href="#pre-speaking-routine">Pre-Speaking Routine</a></h1>
+<p><em>Assembled from the drills Joseph Tsar describes in the video. It is <strong>not</strong> his own downloadable routine, which sits behind an email opt-in. The order below is this wiki's; he doesn't give a sequence.</em></p>
+<h2 id="before-you-speak-about-2-minutes"><a class="header" href="#before-you-speak-about-2-minutes">Before you speak (about 2 minutes)</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Time</th><th>What to do</th><th>From</th></tr></thead><tbody>
+<tr><td>1. Shoulders</td><td>~20 s</td><td>Loosen your shoulders and upper back. Undo the rounding and the &quot;chicken neck&quot;, and stand tall.</td><td><a href="concepts/body-and-breath.html">Body &amp; Breath</a></td></tr>
+<tr><td>2. Lion's breath</td><td>~20 s</td><td>Two sharp inhales to fill the lungs, then exhale through the mouth as if through a straw. Repeat a few times.</td><td><a href="concepts/body-and-breath.html">Body &amp; Breath</a></td></tr>
+<tr><td>3. One-word intention</td><td>30 s</td><td>Choose one word to speak from (<em>encourage</em>, <em>inspire</em>, <em>love</em>…). Use the emotion wheel if you need a more precise word.</td><td><a href="concepts/intention.html">Intention</a></td></tr>
+<tr><td>4. Be the source</td><td>~10 s</td><td>Ask &quot;what am I giving this room?&quot; Drop &quot;what do I need from them?&quot;</td><td><a href="concepts/two-spiritual-laws.html">Spiritual Laws</a></td></tr>
+<tr><td>5. Steady hand, open palm</td><td>~10 s</td><td>Check your structure once, then decide to let go of controlling the words.</td><td><a href="concepts/two-spiritual-laws.html">Spiritual Laws</a></td></tr>
+</tbody></table>
+</div>
+<h2 id="while-you-speak"><a class="header" href="#while-you-speak">While you speak</a></h2>
+<ul>
+<li><strong>Breathe at sentence boundaries</strong>, not mid-sentence (&quot;authority is oxygen&quot;). If you notice a mid-sentence breath, land the sentence and stop.</li>
+<li><strong>Don't engage reaction-thoughts.</strong> A frown or raised eyebrow plants a thought; notice it and leave it alone. Stay with your content.</li>
+<li><strong>Allow silence.</strong> A long pause is a sign of focus, not failure.</li>
+</ul>
+<h2 id="training-drills-outside-the-moment"><a class="header" href="#training-drills-outside-the-moment">Training drills (outside the moment)</a></h2>
+<p>Do these as &quot;reps&quot; during the week (in his framing, speech is a sport):</p>
+<ol>
+<li><strong>Blindfold talk.</strong> Talk with someone while blindfolded and wearing earplugs or earmuffs. Notice how much easier it is to stay on topic without external input.</li>
+<li><strong>&quot;Something you'd die for.&quot;</strong> Talk about a deep belief and notice that the room stops mattering. Remember that feeling.</li>
+<li><strong>Focus Anchor.</strong> Eyes closed, hold an object behind you in mind, and answer a question (a boring answer is fine) while someone pulls disapproving faces. Keep coming back to the anchor.</li>
+<li><strong>Emotional vocabulary.</strong> Learn the emotion wheel from the center out, so you have more intentions to choose from.</li>
+<li><strong>Symptom check.</strong> Mark your 5–10 <a href="concepts/articulate-ascent.html">low-quality symptoms</a> and track whether they fade as you train the three foundations.</li>
+</ol>
+<p>Tsar's own timeline: about <strong>two weeks of focused work over the next month</strong> on the three foundations should clear most low-quality problems.</p>
+<h2 id="related-7"><a class="header" href="#related-7">Related</a></h2>
+<ul>
+<li><a href="concepts/three-high-quality-problems.html">The Three High-Quality Problems</a></li>
+<li><a href="concepts/quotes.html">Key Quotes</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="key-quotes"><a class="header" href="#key-quotes">Key Quotes</a></h1>
+<p>Short excerpts, in order. Times are approximate (±10 s) and come from a re-timed transcript; see <a href="concepts/../about.html">About</a>.</p>
+<div class="table-wrapper"><table><thead><tr><th>Time</th><th>Quote</th><th>Topic</th></tr></thead><tbody>
+<tr><td>[00:35]</td><td>&quot;They might remove filler words, but they never focus on the high quality communication problems that actually change the way that you show up.&quot;</td><td><a href="concepts/articulate-ascent.html">Ascent</a></td></tr>
+<tr><td>[01:48]</td><td>&quot;If you have enough money you still have problems, you just have higher quality problems. Well, the same is true with communication.&quot;</td><td><a href="concepts/articulate-ascent.html">Ascent</a></td></tr>
+<tr><td>[05:08]</td><td>&quot;We have this saying in our company that speech is a sport.&quot;</td><td><a href="concepts/speech-is-a-sport.html">Sport</a></td></tr>
+<tr><td>[05:41]</td><td>&quot;It doesn't matter if you're good at kicking with your toes if you don't have any strong muscles in your legs.&quot;</td><td><a href="concepts/speech-is-a-sport.html">Sport</a></td></tr>
+<tr><td>[06:35]</td><td>&quot;It's like what I call the flavor behind the words.&quot;</td><td><a href="concepts/intention.html">Intention</a></td></tr>
+<tr><td>[07:02]</td><td>&quot;My heart is saying something different than what my mouth is saying.&quot;</td><td><a href="concepts/intention.html">Intention</a></td></tr>
+<tr><td>[08:12]</td><td>&quot;You take 30 seconds before you communicate and you think of one word that is going to be the place, the intention that you speak from.&quot;</td><td><a href="concepts/intention.html">Intention</a></td></tr>
+<tr><td>[10:19]</td><td>&quot;Each had learned how to develop an intimate relationship with focus.&quot;</td><td><a href="concepts/focus.html">Focus</a></td></tr>
+<tr><td>[12:05]</td><td>&quot;Internal influence comes from within, how you feel about it, staying true to your content regardless.&quot;</td><td><a href="concepts/focus.html">Focus</a></td></tr>
+<tr><td>[15:45]</td><td>&quot;Most people don't realize that their focus is usually breaking every two to three seconds because a new thought enters their mind.&quot;</td><td><a href="concepts/focus.html">Focus</a></td></tr>
+<tr><td>[16:10]</td><td>&quot;Focus always exists. It's just buried under intense mental activity. Stillness is always with you.&quot;</td><td><a href="concepts/focus.html">Focus</a></td></tr>
+<tr><td>[19:21]</td><td>&quot;If you solve the body, you end up improving the mind.&quot;</td><td><a href="concepts/body-and-breath.html">Body &amp; Breath</a></td></tr>
+<tr><td>[21:03]</td><td>&quot;Authority is oxygen. Where you breathe determines how authoritative what you say sounds.&quot;</td><td><a href="concepts/body-and-breath.html">Body &amp; Breath</a></td></tr>
+<tr><td>[23:27]</td><td>&quot;The strongest speech comes from a place of giving. When you need the room to approve you, you lose your ground.&quot;</td><td><a href="concepts/two-spiritual-laws.html">Spiritual Laws</a></td></tr>
+<tr><td>[24:13]</td><td>&quot;So the goal is to speak with a steady hand and an open palm.&quot;</td><td><a href="concepts/two-spiritual-laws.html">Spiritual Laws</a></td></tr>
+</tbody></table>
+</div>
+<h2 id="related-8"><a class="header" href="#related-8">Related</a></h2>
+<ul>
+<li><a href="concepts/practice.html">Pre-Speaking Routine</a></li>
+<li><a href="concepts/../index.html">Introduction</a></li>
+</ul>
+<hr />
+<p><em>Source: Joseph Tsar (<a href="https://x.com/joseph_tsar_">@joseph_tsar_</a>), &quot;How To Communicate Like A Leader [Full Training]&quot;, <a href="https://x.com/joseph_tsar_/status/2120562177765446076">original X post</a>, 2026-11-11. This page summarises his ideas; quotes are short excerpts. Watch the original for the full training.</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
